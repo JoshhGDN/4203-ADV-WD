@@ -1,0 +1,54 @@
+/* Styling for Milestone2.html */
+.m2 a {
+    color: white;
+}
+.buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+input[type = button] {
+    background-color: #FFA500;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5%;
+    justify-content:space-evenly;
+}
+
+/* Styling for bookDetails, bookSearch, and bookShelf */
+body {
+    background-color:black;
+}
+
+/* bookDetails styling */
+label {
+    color: white;
+}
+.searchForBook {
+    position: absolute;
+    bottom: 80%;
+    left: 80%;
+}
+input[type = text] {
+    box-sizing: border-box;
+    padding: 12px;
+
+}
+.searchButton {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.sectionSearch, .searchResults{
+    max-height: 100vh;
+
+
+}
+#bookshelf {
+    color: white;
+}

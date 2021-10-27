@@ -1,0 +1,30 @@
+/* Milestone 1 Styling */
+
+.listingArea {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ul {
+    list-style: square;
+}
+
+/* M1 Single Book styling */ 
+body {
+    background-color: black;
+}
+.image {
+    float: right;
+    margin: 10px;
+    padding: 10px;
+}
+p, .isbn {
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+}
+.content {
+    margin: 20px;
+    padding: 20px;
+}
