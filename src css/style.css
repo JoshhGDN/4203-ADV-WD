@@ -28,7 +28,7 @@ head, body {
     height: 60px;
     z-index: 1;
     text-align: center;
-    /* background-color: black; */
+    background-color: black;
 }
 
 .nav {
@@ -89,7 +89,7 @@ a {
     position: fixed;
     bottom: 0;
     width: 10%;
-    left: 32%;
+    right: 6%;
 }
 .bottom img {
     width: 150px;

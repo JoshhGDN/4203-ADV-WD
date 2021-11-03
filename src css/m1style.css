@@ -1,13 +1,26 @@
 /* Milestone 1 Styling */
-
+.titleList {
+    color: orange;
+    position: absolute;
+    top: 10%;
+    left: 70%;
+}
 .listingArea {
+    color: black;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 20%;
 }
 ul {
-    list-style: square;
+    list-style: none;
+}
+.display {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+ul, a {
+    font-size: 1.2rem;
 }
 
 /* M1 Single Book styling */ 

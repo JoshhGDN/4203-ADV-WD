@@ -1,0 +1,36 @@
+input[type = button], input[type = submit] {
+    background-color: #FFA500;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5%;
+    justify-content:space-evenly;
+}
+input[type = text] {
+    box-sizing: border-box;
+    padding: 12px;
+}
+.buttons {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.myCollection {
+    height: 80vh;
+}
+.searchBar {
+    height: 50vh;
+}
+.myCollection, .searchBar {
+    margin: 20px;
+}
+.viewCollection {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
