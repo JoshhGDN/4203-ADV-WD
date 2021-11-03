@@ -13,17 +13,28 @@ input[type = text] {
     box-sizing: border-box;
     padding: 12px;
 }
-.buttons {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 .myCollection {
-    height: 80vh;
+    height: 90vh;
 }
 .searchBar {
-    height: 50vh;
+    text-align: center;
+    height: 45vh;
+    position: relative;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    
+}
+.results {
+    
+}
+
+.searchResults {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 10px;
 }
 .myCollection, .searchBar {
     margin: 20px;
@@ -33,4 +44,10 @@ input[type = text] {
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+#collection {
+    position: relative;
+    display: flex;
+    padding: 30px;
+    top: 170px;
 }
