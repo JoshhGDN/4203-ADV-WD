@@ -14,20 +14,16 @@ input[type = text] {
     padding: 12px;
 }
 .myCollection {
-    height: 90vh;
+    height: 80vh;
 }
 .searchBar {
     text-align: center;
-    height: 45vh;
+    height: 30vh;
     position: relative;
-    left: 49%;
+    left: 48%;
     transform: translate(-50%, -50%);
     
 }
-.results {
-    
-}
-
 .searchResults {
     list-style: none;
     display: flex;
@@ -44,6 +40,13 @@ input[type = text] {
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+#result {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    top: -30px;
 }
 #collection {
     position: relative;
