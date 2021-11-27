@@ -12,8 +12,7 @@ $(document).ready(function(){
             var author = '';
             $.get("https://www.googleapis.com/books/v1/volumes?q=" + search, function(response){
                 for(i = 0; i < response.items.length; i++){
-                    title = $('<h3> <a href=' + response.items[i].volumeInfo.infoLink + '>' + response.items[i].volumeInfo.title + '</a></h3>');
-                    author = $('<h5 style="color:white">' + response.items[i].volumeInfo.authors + '</h5>');
+                    title = $('<h3> <a href=' + response.items[i].volumeInfo.infoLink + '>' + response.items[i].volumeInfo.title +'</a></h3>');
                     img = $('<img><br> <a href =' + response.items[i].volumeInfo.infoLink + '></img>');
                     url = response.items[i].volumeInfo.imageLinks.thumbnail;
 

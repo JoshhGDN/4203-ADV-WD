@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="./src css/style.css">
+    <link rel="stylesheet" href="./src css/m4style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title> Milestone 4 </title>
+</head>
+<body>
+    <header class="intro">
+        <div class = "navigation">
+            <ul class = "nav">
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="milestone1.html"> MS 1 </a></li>
+                <li><a href="milestone2.html"> MS 2 </a></li>
+                <li><a href="milestone3.html"> MS 3 </a></li>
+                <li><a href="milestone4.html"> MS 4 </a></li>
+            </ul>
+        </div>
+        <section class="myCollection">
+            <div class="viewCollection">
+                <input type="button" value = " View My Personal Library " onclick="openLibrary()">
+                <input type="button" class = "gridView" value = "Grid View" onclick="enableGrid()">
+                <input type="button" class = "listView" value = "List View" onclick="enableList()">
+            </div>
+            <div id="collection">
+                
+            </div>
+        </section>
+        
+        <section class="searchBar">
+            <form id = "m3Form">
+                <div class="buttons">
+                    <label for="book"> Enter the name of the book </label>
+                        <br><br>
+                        <input type = "text" id = "bookSearch" name = "bookSearch">    
+                        <br><br>
+                        <input type = "submit" value = " Search ">
+                </div>
+            </form>
+        </section>
+        <section class="bookList">
+            <div id = "result">
+    
+            </div>
+        </section>
+    </header>
+    
+<script src="./scripts/milestone4.js"></script>
+</body>
+</html>

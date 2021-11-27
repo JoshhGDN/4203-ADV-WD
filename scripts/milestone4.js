@@ -1,4 +1,13 @@
-// All JavaScript source code regarding milestone 3
+// Grid and List View for Milestone 4
+function enableGrid() {
+    $("#result").css("width", "20%").css("height", "150px");
+    $("#collection").css("width", "20%").css("height", "150px");
+
+}
+function enableList() {
+
+}
+// All JavaScript source code regarding milestone 4
 function openLibrary() {
     $(document).ready(function(){
         var url = "https://www.googleapis.com/books/v1/users/101130678356918966260/bookshelves/1001/volumes";
@@ -12,7 +21,6 @@ function openLibrary() {
         });
     });
 }
-
 // onSubmit 
 $(document).ready(function(){
     $("#m3Form").submit(function(){
@@ -28,15 +36,13 @@ $(document).ready(function(){
             $.get("https://www.googleapis.com/books/v1/volumes?q=" + search, function(response){
                 for(i = 0; i < response.items.length; i++){
                     title = $('<h3> <a href=' + response.items[i].volumeInfo.infoLink + '>' + response.items[i].volumeInfo.title + '</a></h3>');
-                    author = $('<br><h5 style="color:white">' + response.items[i].volumeInfo.authors + '</h5>');
+                    author = $('<h5 style="color:white">' + response.items[i].volumeInfo.authors + '</h5>');
                     img = $('<img><br> <a href =' + response.items[i].volumeInfo.infoLink + '></img>');
                     url = response.items[i].volumeInfo.imageLinks.thumbnail;
 
                     img.attr('src', url);
-                    img.appendTo("#result");
-                    author.appendTo("#result");
                     title.appendTo("#result");
-                    
+                    img.appendTo("#result");
                 }
             });
         }
